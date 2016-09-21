@@ -1,0 +1,23 @@
+Maze Game User Guide-
+
+The player traverses the maze using the up, down, left and right arrow keys,
+to move in their respective directions.
+Along the way the player will drop bread crumbs to indicate where the player
+has and has not already been.
+
+Pressing N will generate a new maze.
+
+Pressing B will solve the maze using breadth-first search. The dark-blue line represents the optimal path
+the Cyan colored squares indicate where the breadth-first search visited while searching for the finish.
+
+Pressing D will solve the maze using depth-first search. The dark-blue line represents the optimal path
+the Cyan colored squares indicate where the depth-first search visited while searching for the finish.
+
+Whistles-
+Added in path compression which helps the maze generate significantly faster. Setting the boolean flag
+in the maze constructor will toggle this true/on or false/off.
+
+Added in ability to toggle path view. After solving using either DFS/BFS, The player can press P to toggle
+the path on and off.
+
+Added the ability to start the searches from the players current position, wherever the player is in the maze the search will begin from that position and show the fastest path from the player to the target.
